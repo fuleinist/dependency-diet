@@ -1,0 +1,42 @@
+{
+  "name": "dependency-diet",
+  "version": "0.1.0",
+  "description": "Scan your project's dependencies and find the bloat — unused packages, duplicate versions, heavy alternatives, and swap suggestions. Zero-dep Node CLI.",
+  "type": "module",
+  "bin": {
+    "dependency-diet": "bin/cli.js"
+  },
+  "main": "lib/analyze.js",
+  "exports": {
+    ".": "./lib/analyze.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "SPEC.md"
+  ],
+  "scripts": {
+    "test": "node --test test/specifiers.test.js test/lockfile.test.js test/analyze.test.js test/cli.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dependencies",
+    "unused",
+    "bloat",
+    "bundle-size",
+    "cli",
+    "package-json",
+    "lockfile",
+    "audit",
+    "devtools"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuleinist/dependency-diet.git"
+  },
+  "homepage": "https://github.com/fuleinist/dependency-diet#readme"
+}

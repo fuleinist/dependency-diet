@@ -1,0 +1,9 @@
+{
+  "name": "fixture-lock",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "bar": "^1.0.0"
+  },
+  "lockfileVersion": 3
+}
